@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+        {% block head %}
+        {% endblock %}
+        <title>Eddy CV</title>
+    </head>
+    <body class="text-light">
+        
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Ortega Edwin</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about-me">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/work">My Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contacts">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="presentation text-center text-uppercase">
+            {% block presentation %}{% endblock %}
+        </div>
+        
+        <main class="container my-5">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="container-fluid bg-dark py-4">
+            <p class="text-center mb-0">Edwin Omar Ortega Gutierrez © 2023</p>
+        </footer> 
+        <script src="{{ url_for('static', filename='scripts/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts/base.js') }}"></script>
+    </body>
+</html>

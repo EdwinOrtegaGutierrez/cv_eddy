@@ -1,0 +1,10 @@
+{
+    "aboutMe": [
+        "I'm a tech enthusiast with a background in computer science engineering and experience in developing scalable projects. I'm committed to sustainable development and always strive to create high-quality computer solutions through efficient teamwork. I'm a dedicated, curious, and creative person with a strong sense of social and environmental responsibility. I also enjoy music and writing and have developed skills in musical composition and storytelling."
+    ],
+    "education":{
+        "nivel":["Computer Science Engineering. (2021 - ongoing)."],
+        "campus":["UDG CUTonala."],
+        "description":["Computer Science Engineer with extensive experience in parallel computing, distributed computing, cloud computing, information systems development, and big data management, as well as in problem-solving using various methodologies in the high-performance computing area. Competent in the design, implementation, and optimization of IT solutions, capable of working in a team and under pressure. Additionally, I possess skills in data analysis, programming, and a strong focus on quality and efficiency in project delivery."]
+    }
+}

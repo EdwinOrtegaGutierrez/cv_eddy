@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.home svg {
+    fill: #fff; /* Cambia el color de relleno a blanco */
+    width: 25px; /* Ajusta el ancho a 50 píxeles */
+    height: 25px; /* Ajusta la altura a 50 píxeles */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

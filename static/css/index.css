@@ -1,0 +1,67 @@
+/*
+Negro
+#292B2F
+
+Gris Oscuro
+#252525
+
+Gris Claro
+#36393F
+
+Verde
+#3bff6f
+
+#FAD02E: Un tono amarillo complementa verde contrasta con el negro y los tonos grises oscuros.
+#FFB6C1: Un rosa complementa verde contrasta negro y los tonos grises oscuros.
+#E74C3C: Un rojo contrasta verde y complementa negro y los tonos grises oscuros.
+#8E44AD: Un tono morado complementa verde y contrasta negro y los tonos grises oscuros y claros.
+*/
+
+.display-2{
+    color: #84f3a2;
+}
+
+.presentation {
+    position: relative;
+    height: 100vh; /* establecer el alto al 100% de la altura de la ventana gráfica */
+}
+
+.presentation-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #292b2f62;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 80%; /* establecer el ancho del contenido */
+    max-width: 800px; /* establecer el ancho máximo del contenido */
+}
+
+.presentation img {
+    display: block;
+    width: 100%;
+    height: 100%; /* ajustar la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* establecer que la imagen cubra todo el contenedor */
+}
+
+/*FLECHA*/
+.more {
+    position: absolute;
+    top: calc(40% + 40vh);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.more p{
+    color: #3bff6f;
+}
+
+.img-arrow {
+max-width: 50px;
+max-height: 50px;
+filter: invert(1);
+margin-left: 5px;
+}

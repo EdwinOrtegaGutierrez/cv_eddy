@@ -1,0 +1,22 @@
+body {
+    background-color: #0d0d0d;
+    background-image: radial-gradient(ellipse at bottom, #1a2038 0%, #0d0d0d 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+
+header {
+    border-bottom: 2px solid #3bff6f;
+}
+
+main {
+    border-top: 2px solid #3bff6f;
+    border-bottom: 2px solid #3bff6f;
+}
+
+
+footer {
+    background-color: #252525;
+    border-top: 2px solid #3bff6f;
+}

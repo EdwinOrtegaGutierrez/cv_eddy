@@ -1,0 +1,34 @@
+{% extends "/home/base.html" %} 
+
+{% block content %}
+    <hr>
+    <h1>Skills</h1>
+    <ul class="list-group">
+        {% for skill in skills %}
+            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+        {% endfor %}
+    </ul>   
+
+    <hr>
+    <h1>Data Bases</h1> 
+    <ul class="list-group">
+        {% for skill in db %}
+            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+        {% endfor %}
+    </ul>   
+    <hr>
+    <h1>Programming Languages</h1> 
+    <ul class="list-group">
+        {% for skill in pl %}
+            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+        {% endfor %}
+    </ul>   
+    <hr>
+    <h1>Frameworks</h1>
+    <ul class="list-group footer">
+        {% for skill in frameworks %}
+            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+        {% endfor %}
+    </ul>   
+    <hr>
+{% endblock %}

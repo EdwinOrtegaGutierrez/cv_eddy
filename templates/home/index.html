@@ -1,0 +1,51 @@
+{% extends "/home/base.html" %} 
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block presentation %}
+    <div class="presentation-content">
+        <h1 class="display-2">{{ presentation.name }}</h1>
+        <h1 class="display-6">{{ presentation.job_experience }}</h1>
+        <hr style="border-top: 2px solid #3bff6f;">
+        <p class="lead">{{ presentation.semester }}</p>
+    </div>  
+    <div class="more">    
+        <p>Get to know me</p> 
+        <button class="btn"> <img src="{{ url_for('static', filename='/img/arrow.png') }}" alt="down" class="img-arrow"></button>
+    </div>
+    <img src="{{ url_for('static', filename='/img/bg-presentation.jpg') }}" alt="Presentation Background" class="img-fluid">
+{% endblock %}
+
+{% block content %}
+    <div class="professional">    
+        <hr>
+        {% for title, description in information.items() %}
+            <h1 class="text-capitalize">{{title}}</h1>
+            <p style="text-align: justify;">{{description}}</p>
+            <hr>
+        {% endfor %}
+    </div>
+
+    <div class="extra">    
+        <h1 class="text-capitalize">extra</h1>
+        <ul class="list-group">
+            {% for e in extra %}    
+                <li class="list-group-item list-group-item-info bg-dark text-light">{{ loop.index0 + 1 }}. {{ e }}</li>
+            {% endfor %}
+        </ul>
+        <hr>
+    </div>
+    
+    <div class="hobbies">    
+        <h1 class="text-capitalize">hobbies</h1>
+        <ul class="list-group">
+            {% for h in hobbies %}    
+                <li class="list-group-item list-group-item-info bg-dark text-light">{{ loop.index0 + 1 }}. {{ h }}</li>
+            {% endfor %}
+        </ul>
+        <hr>
+    </div>
+
+    <script src="{{ url_for('static', filename='/scripts/index.js') }}"></script>
+{% endblock %}

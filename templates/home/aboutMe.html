@@ -1,0 +1,18 @@
+{% extends "/home/base.html" %} 
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about_me.css') }}">
+{% endblock %}
+
+{% block content %}
+    <hr>   
+    <h1>About Me</h1>
+    <p>{{ about_me }}</p>
+    <hr>
+    <h1>Education</h1>
+    <h5>{{ education.nivel[0] }}</h5>
+    <p>{{ education.campus[0] }}</p>
+    <p>{{ education.description[0] }}</p>
+    <hr>
+    <img src="{{ url_for('static', filename='/img/edwin.png') }}" alt="">
+    <hr>
+{% endblock %}

@@ -1,0 +1,44 @@
+{
+    "skills":[
+        "Microsoft Office",
+        "Docker",
+        "Linux",
+        "Shell Scripting",
+        "GIT",
+        "Developed Frontend",
+        "Developed Backend",
+        "Fast learning",
+        "ROS"
+    ],    
+    "db":[   
+        "MariaDB",
+        "MySQL",
+        "MongoDB"
+    ],
+    "pl":[
+        "Python", 
+        "JavaScript", 
+        "PHP",
+        "Java",
+        "C/C++",
+        "C#", 
+        "GO",
+        "Arduino", 
+        "MatLab" 
+    ],
+    "frameworks":[
+        "XAML Designer",  
+        "WPF",
+        "Flask",
+        ".NET", 
+        "Angular", 
+        "Bootstrap",
+        "CanvasJS",
+        "ChartJS",
+        "Django",
+        "NGINX",
+        "NodeJS",
+        "OpenCV"
+    ]
+    
+}

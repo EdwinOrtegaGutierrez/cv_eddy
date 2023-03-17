@@ -1,0 +1,26 @@
+{% extends "/home/base.html" %} 
+{% block head %} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/work.css') }}">
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <h2>My Work</h2>
+    <p>En esta sección puedes describir tus habilidades y proyectos más destacados.</p>
+    <div class="row">
+        <!-- Ejemplo de proyecto destacado -->            
+        {% for name, data in repositories.items() %}
+            <div class="col-md-4 custom-card">
+                <div class="card">
+                    <!-- <img src="https://via.placeholder.com/300x200" class="card-img-top"> -->
+                    <div class="card-body">
+                        <h5 class="card-title text-center text-uppercase">{{ name }}</h5>
+                        <p class="card-text">{{ data.description }}</p>
+                        <a href="{{ data.url }}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <hr>
+{% endblock %}

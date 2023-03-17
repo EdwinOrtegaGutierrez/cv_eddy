@@ -1,0 +1,31 @@
+{
+    "presentation":{ 
+        "name":"ortega edwin",
+        "job_experience":"software developer and data analyst",
+        "semester":"fifth-semester computer science student"
+    },
+    "WE": [
+        "Throughout my university career, I have demonstrated outstanding skills in developing scalable projects and quick learning, always maintaining a focus on clean code. My experience includes working with server-side applications, with particular attention to databases, data validation, and user type validations. As well as with client-side, in designing the graphical interface, presenting specific data for each type of user, mobility of visual data, and data visualization. Currently, I am working on the Mars Rover UDG Space project in the autonomy area since August 2022. Additionally, I have developed web and desktop applications, and gained experience in detecting ArUco codes and implementing navigation algorithms for robotics. My focus is always on creating efficient solutions, with high performance and quality in their development, and working as a team to achieve goals. I am always looking for new opportunities to continue growing and improving my skills in the field of computer science"
+    ],
+    "GO": [
+        "My main goal is to contribute to the creation and implementation of innovative technological solutions to mitigate and prevent the effects of climate change, promoting sustainable and environmentally-friendly development. My objective is to apply my skills and knowledge in technology to help create a cleaner and more sustainable future, in which people, communities, and nature can coexist in harmony and balance."
+    ],
+    "SW": [
+        "My strengths are quick learning, problem-solving, and attention to detail. I have experience in developing web and mobile applications, and implementing artificial intelligence and machine learning technologies. My weaknesses are being too much of a perfectionist and needing to work on delegating tasks and trusting my team more. However, I am always seeking new opportunities to improve my skills in computer science."
+    ],
+    "motivations": [
+        "I'm motivated to create innovative technological solutions to mitigate and prevent the effects of climate change, and promote sustainable development. My goal is to apply my skills and knowledge in technology to help create a cleaner and more sustainable future, where people, communities, and nature can coexist in harmony."
+    ],
+    "extra": [
+        "Musical experience in music creation and performance",
+        "Technical teaching in \"Guitar and Bass for Beginners\""
+    ],
+    "hobbies": [
+        "Playing guitar, bass, and drums",
+        "Writing fantasy stories",
+        "Watching comedy shows",
+        "Learning something new such as solving Rubik's Cube, cooking, creating crafts",
+        "Painting and drawing",
+        "Listening to jazz and blues to relax."
+    ]
+}
