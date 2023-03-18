@@ -1,34 +1,64 @@
 {% extends "/home/base.html" %} 
 
 {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <hr>
+            <h1 class="text-center">Skills</h1>
+            <ul class="list-group">
+                {% for skill in skills %}
+                    <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+                {% endfor %}
+            </ul>   
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <hr>
+            <h1 class="text-center">Data Bases</h1> 
+            <ul class="list-group">
+                {% for skill in db %}
+                    <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+                {% endfor %}
+            </ul>   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <hr>
+            <h1 class="text-center">Programming Languages</h1> 
+            <ul class="list-group">
+                {% for skill in pl %}
+                    <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>    
+                {% endfor %}
+            </ul>   
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <hr>
+            <h1 class="text-center">Frameworks</h1>
+            <ul class="list-group footer">
+                {% for skill in frameworks %}
+                    <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
+                {% endfor %}
+            </ul>   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <hr>
+            <h1 class="text-center">Lenguages</h1>
+            <ul class="list-group footer">
+                {% for lenguage, level in lenguages.items() %}
+                    <li class="list-group-item list-group-item-primary bg-dark text-light">
+                        {{lenguage}} <span class="level">{{level}}%</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style="width: {{level}}%;" aria-valuenow="{{level}}" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>  
+        </div>
+    </div>
     <hr>
-    <h1>Skills</h1>
-    <ul class="list-group">
-        {% for skill in skills %}
-            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
-        {% endfor %}
-    </ul>   
+</div>
 
-    <hr>
-    <h1>Data Bases</h1> 
-    <ul class="list-group">
-        {% for skill in db %}
-            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
-        {% endfor %}
-    </ul>   
-    <hr>
-    <h1>Programming Languages</h1> 
-    <ul class="list-group">
-        {% for skill in pl %}
-            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
-        {% endfor %}
-    </ul>   
-    <hr>
-    <h1>Frameworks</h1>
-    <ul class="list-group footer">
-        {% for skill in frameworks %}
-            <li class="list-group-item list-group-item-info bg-dark text-light">{{skill}}</li>
-        {% endfor %}
-    </ul>   
-    <hr>
 {% endblock %}

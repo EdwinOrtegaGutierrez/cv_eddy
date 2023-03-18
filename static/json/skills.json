@@ -39,6 +39,10 @@
         "NGINX",
         "NodeJS",
         "OpenCV"
-    ]
-    
+    ],  
+    "lenguages":{
+        "Spanish":"100",
+        "English":"75",
+        "French":"15"
+    }
 }
