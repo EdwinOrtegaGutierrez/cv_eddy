@@ -40,7 +40,7 @@ def work():
     url = 'https://api.github.com/users/EdwinOrtegaGutierrez/repos'
 
     # Crea una solicitud GET a la API con el token de acceso en la cabecera
-    response = get(url, headers={'Authorization': 'token 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'})
+    response = get(url, headers={'Authorization': 'token your_acces_token'})
 
     # Obtiene la lista de repositorios de la respuesta JSON utilizando la biblioteca "json"
     repos = loads(response.content)
@@ -64,7 +64,8 @@ def skills():
     db = data["db"]
     pl = data["pl"]
     frameworks = data["frameworks"]
-    return html('home/skills.html', skills=skills, db=db, pl=pl, frameworks=frameworks)
+    lenguages = data["lenguages"]
+    return html('home/skills.html', skills=skills, db=db, pl=pl, frameworks=frameworks, lenguages=lenguages)
 
 if __name__ == "__main__":
     #app.secret_key = 'super secret key' #NECESARIO PARA MANDAR MENSAJES PRIVADOS
